@@ -12,9 +12,6 @@ const App = () => {
       </div>
       <div className="editor">
         <TextEditor />
-        <TextEditor />
-        <TextEditor />
-        <TextEditor />
       </div>
     </div>
   )

@@ -54,9 +54,6 @@ class Nav extends Component {
                                 <span className="title">Liên hệ</span>
                             </a>
                         </li>
-                        {/* <div className="text-center" id="btnCloseMenu">
-                            <button className="btn btn-danger btn-sm">&times;</button>
-                        </div> */}
                     </ul>
                 </div>
             </div>
