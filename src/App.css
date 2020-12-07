@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Arsenal', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    min-width: 330px;
+}
+
+.bg-ou {
+    background-color: #1d50a3;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Banner Top CSS */
+
+.Nav {
+    padding: 5px;
+}
+
+.searchForm .btn-success {
+    padding: 6px 10px;
+    border-radius: 50%;
+     border: none;
+    outline: none;
+}
+
+.navCtrl , .searchForm {
+    display: inline-block;
+}
+
+.navigation {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 60px;
+    height: 100%;
+    background: #000e;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        width: 0px;
+    }
+    .navCtrl , .searchForm {
+        display: block;
+    }
+}
+
+.navigation:hover, .navigation.active {
+    width: 200px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover {
+    background: #1d50a3;
+    box-shadow: 0px 0px 10px #fff9;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+    font-size: 22px;
+}
+
+.navigation ul li a .title {
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    line-height: 60px;
+    text-align: start;
+    white-space: normal;
+}
+
+.toggle.active {
+    background: orangered !important;
+}
+
+.toggle::before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+}
+
+.toggle.active::before {
+    content: '\f057';
+    font-family: fontAwesome;
+}
+
+.searchBoxTop {
+    border: none;
+    background: #0000;
+    outline: none;
+    color: #f8f8f8;
+    padding: 10px 0px 10px 10px;
+}
+
+/* editor component */
+.editor {
+    max-width: 700px;
+    width: 95%;
+    margin: 5px auto;
+    box-shadow: 0px 0px 5px #333;
+}
